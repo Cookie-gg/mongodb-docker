@@ -1,4 +1,4 @@
-# a image of mongodb in docker
+# mongodb - docker container for development
 
 ### setup
 - make a image
