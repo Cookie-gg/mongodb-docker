@@ -3,7 +3,7 @@
 ### setup
 - make a image
 ```
-docker-compose up -d
+docker-compose up (-d: run in the background)
 ```
 
 - setup for replica

@@ -2,12 +2,13 @@ version: "3.8"
 
 services:
   mongodb:
-    # container_name: mongo
-    image: mongo:4
+    container_name: mongodb-replica
+    image: mongo:latest
     command: --replSet rs0
     ports:
       - 27017:27017
     volumes:
-      - db_data:/data/mongodb
+      - data:/data/db
 volumes:
-  db_data:
+  data:
+    driver: local
